@@ -46,17 +46,17 @@
 The report of my final project
 
 ## ./code/
-Contains the python code for Machine Learning, Data Virtualization, and other helper codes.\\
-ML code:\\
-learning.py -- do the traning, validation, and testing with "tuning"\\
-model.py -- do the traning, validation, and testing without "tuning"  Usage: python model.py <dataFile>\\
-Virtualization:\\
-correlation.py -- draw covariance images\\
-energy_hist.py -- draw energy usage (frequency) statistics images\\
-heatmap.py -- draw energy usage vs time images\\
-residual_plot.py -- draw difference of prediction vs actural value\\
+Contains the python code for Machine Learning, Data Virtualization, and other helper codes.<br/>
+ML code:<br/>
+learning.py -- do the traning, validation, and testing with "tuning"<br/>
+model.py -- do the traning, validation, and testing without "tuning"  Usage: python model.py <dataFile><br/>
+Virtualization:<br/>
+correlation.py -- draw covariance images<br/>
+energy_hist.py -- draw energy usage (frequency) statistics images<br/>
+heatmap.py -- draw energy usage vs time images<br/>
+residual_plot.py -- draw difference of prediction vs actural value<br/>
 ## ./source/
-Conatins\\
-energydata_complete.csv -- source data\\
-output.csv -- modify the data, numeralize\\
+Conatins<br/>
+energydata_complete.csv -- source data<br/>
+output.csv -- modify the data, numeralize<br/>
 active.csv, nonactive.csv -- split output.csv into 2 parts by human active periods, and human non-active periods
