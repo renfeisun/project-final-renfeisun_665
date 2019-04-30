@@ -2,12 +2,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pandas import Series, date_range, read_csv
 import datetime
+import sys
 
 def energy_series():
 	time = date_range(start='1/11/2016 17:00:00', end='5/27/2016 18:00:00', freq='10min')
 	plt.rcParams.update({'font.size': 40})
 	data = []
-	f = './energydata_complete.csv'
+	f = sys.argvp1[
 	with open(f, 'r') as fr:
 		fr.readline()
 		for line in fr:
@@ -34,7 +35,7 @@ def energy_freq():
 	plt.savefig(r"figure_2.png")
 
 def energy_freq_mean():
-	f = './output.csv'
+	f = sys.argv[1]
 	df = read_csv(f)
 	df = df[['Appliances']]
 	df.boxplot(column='Appliances', vert=False, fontsize=10)

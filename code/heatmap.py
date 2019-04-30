@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pandas import read_csv
 import datetime
-
+import sys
 
 data = [np.zeros((24,7)) for i in range(5)]
 
-f = './energydata_complete.csv'
+f = sys.argv[1]
 with open(f, 'r') as fr:
     fr.readline()
     for line in fr:
